@@ -1,0 +1,6 @@
+www.nodejs: 127.0.0.1 [17/Apr/2016:14:37:21 +0300] "HEAD / HTTP/1.1" 200 -
+www.nodejs: 127.0.0.1 [17/Apr/2016:14:38:03 +0300] "GET / HTTP/1.1" 200 683
+www.nodejs: 127.0.0.1 [17/Apr/2016:14:38:03 +0300] "GET /apacheicons/blank.gif HTTP/1.1" 200 148
+www.nodejs: 127.0.0.1 [17/Apr/2016:14:38:03 +0300] "GET /apacheicons/folder.gif HTTP/1.1" 200 225
+www.nodejs: 127.0.0.1 [17/Apr/2016:14:38:03 +0300] "GET /favicon.ico HTTP/1.1" 404 1012
+www.nodejs: 127.0.0.1 [17/Apr/2016:14:38:03 +0300] "GET /favicon.ico HTTP/1.1" 404 1012

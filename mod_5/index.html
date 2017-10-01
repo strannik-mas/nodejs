@@ -1,0 +1,25 @@
+<!-- клиент -->
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	var socket = io.connect('http://localhost:8080');
+	window.onunload = function(){
+		socket.disconnect();
+	}
+	socket.on('hello', function(data){
+		alert(data.hello);
+		//console.log(data.hello);
+	});
+	function getName(first){
+		var name = prompt('What is your name?', 'Гость');
+		if(name){
+			if(first){
+				//посылка сообщения
+				socket.emit('message', name);
+			}
+			else
+				socket.emit('new_message', name);
+		}
+	}
+</script>
+<button onclick="getName(0)">Представьтесь</button>
+<button onclick="getName(1)">Сменить имя</button>
